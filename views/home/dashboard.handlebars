@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/apple-icon.png">
+    <link rel="icon" type="image/png" href="../../images/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>My Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="../../css/bootstrap_min.css" rel="stylesheet" />
+    <link href="../../css/light-bootstrap-dashboard.css " rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar" data-image="../../images/img_thumb_3.jpg">
+
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <!-- <a href="http://www.creative-tim.com"class="simple-text">
+                        Hospital
+                    </a> -->
+                </div>
+                <ul class="nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/patient/{{ id }}">
+                            <i class="nc-icon nc-chart-pie-35"></i>
+                            <p> Home </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/patient/edit/{{ id }}">
+                            <i class="nc-icon nc-circle-09"></i>
+                            <p>User Profile edit</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/patient/table/{{ id }}">
+                            <i class="nc-icon nc-notes"></i>
+                            <p>Table List</p>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="/">Home </a> -->
+                    <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        
+                        <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">
+                                    <span class="no-icon">Log out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="content">
+               
+    <section class="ftco-intro img" style="background-image: url(../../images/image_7.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-9 text-center">
+                        <h1 style="opacity: 1;">Our Departments</h1>
+                        <h2 style="opacity: 1;">Where you will find the best medical care ever</h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ftco-section ftco-no-pt ftco-no-pb" id="department-section">
+        <div class="container-fluid px-0">
+            <div class="row no-gutters">
+
+       <div class="col-md-4 d-flex">
+                    <div class="img img-dept align-self-stretch" style="background-image: url(../../images/dept-1.jpg);"></div>
+                </div>
+
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col-sm">
+                            <div class="department-wrap p-4 ftco-animate">
+                                <div class="text p-2 text-center">
+                                    <div class="icon">
+                                        <span class="flaticon-stethoscope"></span>
+                                    </div>
+                                    <div class="frame">
+                                    <img src="../../images/neuro1.jpeg">
+                                    </div>
+                                    <h3><a href="/patient/Neurology/{{ id}}">Neurology</a></h3>
+                                    <p>Specialized clinician researchers in the Department of Neurology in order to help in movement disorders, stroke, neuro-oncology, multiple sclerosis.</p>
+                                </div>
+                            </div>
+                            <div class="department-wrap p-4 ftco-animate">
+                                <div class="text p-2 text-center">
+                                    <div class="icon">
+                                        <span class="flaticon-stethoscope"></span>
+                                    </div>
+                                    <div class="frame">
+                                    <img src="../../images/sur2.jpeg">
+                                    </div>
+                                    <h3><a href="/patient/Surgical/{{ id }}">Surgical</a></h3>
+                                    <p>Operating rooms are equipped with the brand-newest operating tables,all necessary modern neurosurgical facilities, surgical microscopes, intraoperative ultrasound unit and monitoring of brain and spinal cord.</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="department-wrap p-4 ftco-animate">
+                                <div class="text p-2 text-center">
+                                    <div class="icon">
+                                        <span class="flaticon-stethoscope"></span>
+                                    </div>
+                                    <div class="frame">
+                                    <img src="../../images/oph3.jpeg">
+                                    </div>
+                                    <h3><a href="/patient/Opthalmology/{{ id}}">Opthalmology</a></h3>
+                                    <p>The mission of the Department of Ophthalmology is to provide our patients with quality, state-of-the-art ophthalmic care in all subspecialties of ophthalmology.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="department-wrap p-4 ftco-animate">
+                                <div class="text p-2 text-center">
+                                    <div class="icon">
+                                        <span class="flaticon-stethoscope"></span>
+                                    </div>
+                                    <div class="frame">
+                                    <img src="../../images/tr1.jpeg">
+                                    </div>
+                                    <h3><a href="/patient/Traumatology/{{ id}}">Traumatology</a></h3>
+                                    <p>the Department of Traumatology is established by young physicians from Departments of Surgery, Orthopedics and Emergency Medicine. It is a new force in traumatology. It aims at providing trauma service 24 hours around the clock, so that patients sustaining major trauma are no longer helpless.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="department-wrap p-4 ftco-animate">
+                                <div class="text p-2 text-center">
+                                    <div class="icon">
+                                        <span class="flaticon-stethoscope"></span>
+                                    </div>
+                                    <div class="frame">
+                                    <img src="../../images/nm1.jpeg">
+                                    </div>
+                                    <h3><a href="/patient/Nuclear_Magnetic/{{ id}}">Radiology</a></h3>
+                                    <p>Our Medical Imaging Department provides diagnostic, ultrasound, CAT scan, nuclear medicine, MRI and mammography services.</p>
+                                </div>
+                            </div>
+                            <div class="department-wrap p-4 ftco-animate">
+                                <div class="text p-2 text-center">
+                                    <div class="icon">
+                                        <span class="flaticon-stethoscope"></span>
+                                    </div>
+                                    <div class="frame">
+                                    <img src="../../images/cr3.jpg">
+                                    </div>
+                                    <h3><a href="/patient/Cardiology/{{ id}}">Cardiology</a></h3>
+                                    <p>The Department of Cardiology which comprises specialists of various cardiac subspecialties, provides a broad range of services in the diagnosis and management of all types of heart diseases.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+            
+
+
+
+
+       
+
+
+
+    
+
+            </div>
+
+
+
+                    <div class="modal fade" id="modalAppointment" tabindex="-1" role="dialog" aria-labelledby="modalAppointmentLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="modalAppointmentLabel"><strong>Complain</strong></h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <hr/>
+              <div class="modal-body">
+                <form method="POST" action="/appointment/{{ id }}">
+                  <div class="form-group">
+                    <label for="appointment_message" class="text-black">Your counsaltance</label>
+                    <textarea rows="5" style="height: 100%" class="form-control"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Send!" class="btn btn-primary">
+                  </div>
+                </form>
+              </div>
+              
+            </div>
+          </div>
+      </div>
+        
+</body>
+<!--   Core JS Files   -->
+<script src="../../js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="../../js/core/popper.min.js" type="text/javascript"></script>
+<script src="../../js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../js/plugins/bootstrap-switch.js"></script>
+<script src="../../js/plugins/chartist.min.js"></script>
+<script src="../../js/plugins/bootstrap-notify.js"></script>
+<script src="../../js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
+<!-- <script src="../../js/demo.js"></script> -->
+
+
+</html>
